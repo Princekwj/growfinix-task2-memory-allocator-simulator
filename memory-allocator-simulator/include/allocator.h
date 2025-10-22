@@ -3,19 +3,6 @@
 
 #include <stddef.h>
 
-<<<<<<< HEAD
-// Initialize heap
-void init_heap();
-
-// Allocate memory
-void* my_malloc(size_t size);
-
-// Free memory
-void my_free(void* ptr);
-
-// Print memory map
-void print_memory_map();
-=======
 // Allocation strategy enum
 typedef enum {
     STRATEGY_FIRST_FIT,
@@ -42,6 +29,5 @@ void print_memory_map(void);
 
 // Print allocator statistics
 void print_allocator_stats(void);
->>>>>>> 6aa803f (Updated full version: coalescing, best-fit, thread safety, and improved README)
 
 #endif // ALLOCATOR_H

@@ -1,25 +1,4 @@
 #include <stdio.h>
-<<<<<<< HEAD
-#include "../include/allocator.h"
-
-int main() {
-    init_heap();
-
-    printf("Initial Heap:\n");
-    print_memory_map();
-
-    void* p1 = my_malloc(100);
-    printf("After allocating 100 bytes:\n");
-    print_memory_map();
-
-    void* p2 = my_malloc(200);
-    printf("After allocating 200 bytes:\n");
-    print_memory_map();
-
-    my_free(p1);
-    printf("After freeing first block:\n");
-    print_memory_map();
-=======
 #include <stdlib.h>
 #include <pthread.h>
 #include <string.h>
@@ -92,7 +71,6 @@ int main(void) {
     printf("\nFinal state:\n");
     print_memory_map();
     print_allocator_stats();
->>>>>>> 6aa803f (Updated full version: coalescing, best-fit, thread safety, and improved README)
 
     return 0;
 }
